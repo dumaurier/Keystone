@@ -20,6 +20,26 @@
 	100%{top:55px}
 }
 
+@-moz-keyframes arrow{
+	0%{top:40px}
+	32%{top:40px}
+	35%{top:160px;}
+	70%{top:160px;}
+	73%{top:280px}
+	97%{top:280px}
+	100%{top:55px}
+}
+
+@-ms-keyframes arrow{
+	0%{top:40px}
+	32%{top:40px}
+	35%{top:160px;}
+	70%{top:160px;}
+	73%{top:280px}
+	97%{top:280px}
+	100%{top:55px}
+}
+
 
 @-webkit-keyframes banner{
 	0%{top:-1083px;}
@@ -33,22 +53,22 @@
 
 
 @-moz-keyframes banner{
-	0%{top:-1090px;}
-	32%{top:-1090px;}
-	35%{top:-728px;}
-	70%{top:-728px;}
-	73%{top:-368px;}
-	97%{top:-368px;}
+	0%{top:-1083px;}
+	32%{top:-1083px;}
+	35%{top:-722px;}
+	70%{top:-722px;}
+	73%{top:-362px;}
+	97%{top:-362px;}
 	100%{top:0px;}
 }
 
 @-ms-keyframes banner{
-	0%{top:-1090px;}
-	32%{top:-1090px;}
-	35%{top:-728px;}
-	70%{top:-728px;}
-	73%{top:-368px;}
-	97%{top:-368px;}
+	0%{top:-1083px;}
+	32%{top:-1083px;}
+	35%{top:-722px;}
+	70%{top:-722px;}
+	73%{top:-362px;}
+	97%{top:-362px;}
 	100%{top:0px;}
 }
 
@@ -310,6 +330,8 @@
 .sliderArrow{
 	-webkit-animation:arrow 15s infinite linear;
 	-webkit-animation-fill-mode:backwards;
+	-moz-animation:arrow 15s infinite linear;
+	-moz-animation-fill-mode:backwards;
 	position: absolute;
 	left:246px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
