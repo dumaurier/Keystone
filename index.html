@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Slider</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="selectivizr.min.js"></script>
+
+  <noscript><link rel="stylesheet" href="style.css" /></noscript>
+<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+    	<ul class="slider">
+        	<li class="cta cta1">
+            	<a href="http://www.workopolis.com/solutions/en/product/job-performance-tracking">
+                	<h3>Job Performance Reports</h3>
+                    <p>Get the most out of every job posting.</p>
+                </a>
+            </li>
+            <li class="cta cta2">
+               	<a href="http://www.workopolis.com/solutions/en/product/job-posting">
+                	<h3>Career Alerts</h3>
+                    <p>Job sent directly to more than 8 million inboxes.</p>
+                </a>
+            </li>
+            <li class="cta cta3">
+                <a href="http://www.workopolis.com/solutions/en/product/skilled-labour-recruiting">
+                	<h3>Workopolis Niche Network</h3>
+                    <p>Access the country's largest pools of specialized talent.</p>
+                </a>
+            </li>
+            <li class="cta cta4">
+                <a href="http://www.workopolis.com/solutions/en/product/why-workopolis">
+                	<h3>Why Workopolis?</h3>
+                    <p>More candidates. Better candidates. The best choice for Canadian recruitment.</p>
+                </a>
+            </li>
+        </ul>
+        
+            <div class="banners">
+            <a href="http://www.workopolis.com/solutions/en/product/job-performance-tracking">
+            <img src="images/1.png" alt="Headline" />
+            </a>
+            <a href="http://www.workopolis.com/solutions/en/product/job-posting">
+            <img src="images/4.png" alt="Headline"/>    
+            </a>
+            <a href="http://www.workopolis.com/solutions/en/product/skilled-labour-recruiting">
+            <img src="images/3.png" alt="Headline"  border="0"/>
+            </a>
+            <a href="http://www.workopolis.com/solutions/en/product/why-workopolis">
+            <img src="images/2.png" alt="Headline" border="0"/>
+            </a>
+            <a href="http://www.workopolis.com/solutions/en/product/job-performance-tracking">
+            <img src="images/1.png" alt="Headline" border="0"/>
+            </a>
+            </div>
+    </div><!-- END SLIDER CONTAINER -->
+    
+    
+    <!-- MODERNIZR FALLBACK IF CSS ANIMATIONS ARE NOT SUPPORTED -->
+        <script type="text/javascript">
+        if(!Modernizr.cssanimations) { // Test if CSS animations are supported
+   		    $(document).ready(function() {
+				
+			function animate() {	
+        $(".banners").delay(7000).animate({top:'-484px'},{duration:1000 }).delay(7000).animate({top:'-968px'},{duration:1000 }).delay(7000).animate({top:'-1452px'},{duration:1000 });  
+			}
+			
+			animate()
+    	});
+        }
+        </script>
+</body>
+</html>
