@@ -1,1 +1,1 @@
-Insert some clever text here.\n
+An animated slider built using CSS Animations.
