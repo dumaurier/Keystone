@@ -3,14 +3,18 @@
 ****  ANIMATION CONTROLS  *****
 *******************************
 */
-/*
-*{
-	margin: 0;
-	padding: 0;
-}
-*/
 
 @-webkit-keyframes arrow{
+	0%{top:40px}
+	32%{top:40px}
+	35%{top:160px;}
+	70%{top:160px;}
+	73%{top:280px}
+	97%{top:280px}
+	100%{top:55px}
+}
+
+@-o-keyframes arrow{
 	0%{top:40px}
 	32%{top:40px}
 	35%{top:160px;}
@@ -51,6 +55,16 @@
 	100%{top:0px;}
 }
 
+@-o-keyframes banner{
+	0%{top:-1083px;}
+	32%{top:-1083px;}
+	35%{top:-722px;}
+	70%{top:-722px;}
+	73%{top:-362px;}
+	97%{top:-362px;}
+	100%{top:0px;}
+}
+
 
 @-moz-keyframes banner{
 	0%{top:-1083px;}
@@ -79,6 +93,13 @@
 100%{top:0px;}
 }
 
+@-o-keyframes cta1{
+0%{top:0px;}
+57%{top:-140px;}
+98%{top:-140px;;}
+100%{top:0px;}
+}
+
 
 @-moz-keyframes cta1{
 0%{top:0px;}
@@ -95,6 +116,14 @@
 }
 
 @-webkit-keyframes cta2{
+0%{top:-140px;}
+32%{top:-140px;}
+35%{top:0px;}
+85%{top:-140px;}
+100%{top:-140px;}
+}
+
+@-o-keyframes cta2{
 0%{top:-140px;}
 32%{top:-140px;}
 35%{top:0px;}
@@ -126,6 +155,14 @@
 100%{top:-140px;}
 }
 
+@-o-keyframes cta3{
+0%{top:-140px;}
+71%{top:-140px;}
+74%{top:0px;}
+98%{top:-140px;}
+100%{top:-140px;}
+}
+
 @-moz-keyframes cta3{
 0%{top:-140px;}
 71%{top:-140px;}
@@ -147,19 +184,22 @@
 .slider .cta1 .timer{
 -webkit-animation:cta1 15s infinite;
 -moz-animation:cta1 15s infinite;
--ms-animation:cta1 15s infinite;	
+-ms-animation:cta1 15s infinite;
+-o-animation:cta1 15s infinite;		
 }
 
 .slider .cta2 .timer{
 -webkit-animation:cta2 15s infinite;
 -moz-animation:cta2 15s infinite;
--ms-animation:cta2 15s infinite;	
+-ms-animation:cta2 15s infinite;
+-o-animation:cta2 15s infinite;	
 }
 
 .slider .cta3 .timer{
 -webkit-animation:cta3 15s infinite;
 -moz-animation:cta3 15s infinite;
--ms-animation:cta3 15s infinite;	
+-ms-animation:cta3 15s infinite;
+-o-animation:cta3 15s infinite;	
 }
 
 
@@ -170,12 +210,15 @@
 	-moz-animation-fill-mode:backwards;
 	-ms-animation:banner 15s infinite linear;
 	-ms-animation-fill-mode:backwards;
+	-o-animation:banner 15s infinite linear;
+	-o-animation-fill-mode:backwards;
 }
 
 .container:hover .banners,.container:hover .slider li:nth-of-type(1),.container:hover .slider li:nth-of-type(2),.container:hover .slider li:nth-of-type(3),.container:hover .slider li:nth-of-type(4),.container:hover .sliderArrow,.container:hover .timer{
 	-webkit-animation-play-state:paused;
 	-moz-animation-play-state:paused;
 	-ms-animation-play-state:paused;
+	-o-animation-play-state:paused;
 }
 /**********************************
 *****  END ANIMATION CONTROLS *****
@@ -188,6 +231,9 @@
 	background:rgba(206,206,206,.8);
 	background:-webkit-linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
 	background:-moz-linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
+	background:-o-linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
+	background:-ms-linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
+	background:linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
 	}
 
 .slider .cta:hover:before{
@@ -291,6 +337,10 @@
 	border-bottom:1px solid #999;
 	border-right:1px solid #999;
 	-webkit-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	-ms-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	transition:all .3s ease;
 	overflow: hidden;
 }
 
@@ -335,6 +385,7 @@
 	background: -moz-linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
 	background: -webkit-linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
 	background: -ms-linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
+	background: -o-linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
 	background: linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
 }
 
@@ -344,8 +395,16 @@
 	-webkit-animation-fill-mode:backwards;
 	-moz-animation:arrow 15s infinite linear;
 	-moz-animation-fill-mode:backwards;
+	-ms-animation:arrow 15s infinite linear;
+	-ms-animation-fill-mode:backwards;
+	-o-animation:arrow 15s infinite linear;
+	-o-animation-fill-mode:backwards;
 	position: absolute;
 	left:246px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
+	-ms-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
+	-o-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
+	-moz-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
+	filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	z-index: 100;
 }
