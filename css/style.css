@@ -5,42 +5,42 @@
 */
 
 @-webkit-keyframes arrow{
-	0%{top:40px}
-	32%{top:40px}
-	35%{top:160px;}
-	70%{top:160px;}
-	73%{top:280px}
-	97%{top:280px}
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
 	100%{top:55px}
 }
 
 @-o-keyframes arrow{
-	0%{top:40px}
-	32%{top:40px}
-	35%{top:160px;}
-	70%{top:160px;}
-	73%{top:280px}
-	97%{top:280px}
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
 	100%{top:55px}
 }
 
 @-moz-keyframes arrow{
-	0%{top:40px}
-	32%{top:40px}
-	35%{top:160px;}
-	70%{top:160px;}
-	73%{top:280px}
-	97%{top:280px}
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
 	100%{top:55px}
 }
 
 @-ms-keyframes arrow{
-	0%{top:40px}
-	32%{top:40px}
-	35%{top:160px;}
-	70%{top:160px;}
-	73%{top:280px}
-	97%{top:280px}
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
 	100%{top:55px}
 }
 
@@ -281,8 +281,7 @@
 	border:1px solid #999;
 	margin:10px;
 	padding:0;
-	overflow:hidde;
-	position:relative;
+	overflow:hidden;
 	border-radius:3px;
 	box-shadow:1px 1px 3px rgba(0,0,0,.3);
 	overflow: hidden;
@@ -401,7 +400,7 @@
 	-o-animation:arrow 15s infinite linear;
 	-o-animation-fill-mode:backwards;
 	position: absolute;
-	left:246px;
+	left:265px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-ms-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-o-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
