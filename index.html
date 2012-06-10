@@ -60,17 +60,51 @@
     
     
     <!-- MODERNIZR FALLBACK IF CSS ANIMATIONS ARE NOT SUPPORTED -->
+
+
         <script type="text/javascript">
         if(!Modernizr.cssanimations) { // Test if CSS animations are supported
    		    $(document).ready(function() {
 				
-			function animate() {	
-        $(".banners").delay(7000).animate({top:'-484px'},{duration:1000 }).delay(7000).animate({top:'-968px'},{duration:1000 }).delay(7000).animate({top:'-1452px'},{duration:1000 });  
-			}
+
+			function fallback() {	
+				$(".banners")
+				.css("top","-1083px")
+				.animate({top:'-1083px'},{duration:1000 })
+				.delay(5000)
+				.animate({top:'-723px'},{duration:1000 })
+				.delay(5000)
+				.animate({top:'-363px'},{duration:1000 })
+				.delay(5000)
+				fallback()
+				;}
 			
-			animate()
-    	});
-        }
+				fallback();
+				});
+
+    	
+/*
+    		function arrow() {	
+				$(".sliderArrow")
+				.css("top","60px")
+				.animate({top:'60px'},{duration:1000 })
+				.delay(5000)
+				.animate({top:'180px'},{duration:1000 })
+				.delay(5000)
+				.animate({top:'300px'},{duration:1000 })
+				.delay(5000)
+				arrow();
+				}
+				
+				arrow();
+				});
+*/
+        };
         </script>
+
+
+
+        
+
 </body>
 </html>
