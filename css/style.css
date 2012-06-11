@@ -48,13 +48,13 @@
 
 .banners{
 
-	-webkit-animation:banner 15s infinite linear ;
+	-webkit-animation:banner 30s infinite linear ;
 	-webkit-animation-fill-mode:backwards;
-	-moz-animation:banner 15s infinite linear;
+	-moz-animation:banner 30s infinite linear;
 	-moz-animation-fill-mode:backwards;
-	-ms-animation:banner 15s infinite linear;
+	-ms-animation:banner 30s infinite linear;
 	-ms-animation-fill-mode:backwards;
-	-o-animation:banner 15s infinite linear;
+	-o-animation:banner 30s infinite linear;
 	-o-animation-fill-mode:backwards;
 }
 
@@ -101,13 +101,13 @@
 }
 
 .sliderArrow{
-	-webkit-animation:arrow 15s infinite linear;
+	-webkit-animation:arrow 30s infinite linear;
 	-webkit-animation-fill-mode:backwards;
-	-moz-animation:arrow 15s infinite linear;
+	-moz-animation:arrow 30s infinite linear;
 	-moz-animation-fill-mode:backwards;
-	-ms-animation:arrow 15s infinite linear;
+	-ms-animation:arrow 30s infinite linear;
 	-ms-animation-fill-mode:backwards;
-	-o-animation:arrow 15s infinite linear;
+	-o-animation:arrow 30s infinite linear;
 	-o-animation-fill-mode:backwards;
 }
 
@@ -207,24 +207,24 @@
 
 
 .slider .cta1 .timer{
--webkit-animation:cta1 15s infinite;
--moz-animation:cta1 15s infinite;
--ms-animation:cta1 15s infinite;
--o-animation:cta1 15s infinite;		
+-webkit-animation:cta1 30s infinite;
+-moz-animation:cta1 30s infinite;
+-ms-animation:cta1 30s infinite;
+-o-animation:cta1 30s infinite;		
 }
 
 .slider .cta2 .timer{
--webkit-animation:cta2 15s infinite;
--moz-animation:cta2 15s infinite;
--ms-animation:cta2 15s infinite;
--o-animation:cta2 15s infinite;	
+-webkit-animation:cta2 30s infinite;
+-moz-animation:cta2 30s infinite;
+-ms-animation:cta2 30s infinite;
+-o-animation:cta2 30s infinite;	
 }
 
 .slider .cta3 .timer{
--webkit-animation:cta3 15s infinite;
--moz-animation:cta3 15s infinite;
--ms-animation:cta3 15s infinite;
--o-animation:cta3 15s infinite;	
+-webkit-animation:cta3 30s infinite;
+-moz-animation:cta3 30s infinite;
+-ms-animation:cta3 30s infinite;
+-o-animation:cta3 30s infinite;	
 }
 
 
