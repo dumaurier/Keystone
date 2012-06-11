@@ -61,12 +61,12 @@
 
 /****** Animation controls for Arrow *****/
 @-webkit-keyframes arrow{
-	0%{top:60px}
-	32%{top:60px}
-	35%{top:180px;}
-	70%{top:180px;}
-	73%{top:300px}
-	97%{top:300px}
+	0%{top:40px}
+	32%{top:40px}
+	35%{top:160px;}
+	70%{top:160px;}
+	73%{top:280px}
+	97%{top:280px}
 	100%{top:55px}
 }
 
@@ -246,15 +246,16 @@
 
 /**** Sets hover state for banner headlines *****/
 .slider .cta a:hover{
+background: #dddddd;
 background: rgb(221,221,221); /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(221,221,221,1)), color-stop(51%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 100%); /* W3C */
+background: -moz-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(221,221,221,1)), color-stop(31%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%,rgba(255,255,255,1) 100%); /* W3C */
 	}
 
 /***** Generates rotating banner preview when user hovers over banner headlines *****/
@@ -294,6 +295,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 **********************************/
 
 .container{
+	position: relative;
 	display:block;
 	float:left;
 	height:360px;
@@ -302,9 +304,10 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 	margin:10px;
 	padding:0;
 	overflow:hidden;
+	-moz-border-radius: 3px;
 	border-radius:3px;
+	-moz-box-shadow:1px 1px 3px rgba(0,0,0,.3);
 	box-shadow:1px 1px 3px rgba(0,0,0,.3);
-	overflow: hidden;
 }
 
 .banners{
@@ -363,6 +366,10 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 	/* overflow: hidden; */
 }
 
+.no-cssanimations .slider .cta{
+	border-right:none;
+}
+
 .slider .cta:last-of-type{
 	border-bottom:none;
 }
@@ -416,7 +423,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 
 .sliderArrow{
 	position: absolute;
-	left:265px;
+	left:246px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-ms-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-o-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
@@ -426,9 +433,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 }
 
 /***** Hides Arrow if users browser does not support CSS Animations *****/
-.no-cssanimations .sliderArrow{
-	display: none;
-}
+
 
 
 
