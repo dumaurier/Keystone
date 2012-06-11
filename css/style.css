@@ -265,24 +265,27 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 	height:360px;
 	overflow:hidden;
 	position:absolute;
-	left:250px;
+	left:251px;
 	z-index:50;
 	background:red;
 	}
 	
 	
 .slider .cta1:hover::before{
-	content:url(../images/1.png);
+	background: url(../images/1.png);
+	background-size: cover;
 	top:0;
 }
 
 .slider .cta2:hover::before{
-	content:url(../images/2.png);
+	background: url(../images/2.png);
+	background-size: cover;
 	top:-121px;
 }
 
 .slider .cta3:hover::before{
-	content:url(../images/3.png);
+	background: url(../images/3.png);
+	background-size: cover;
 	top:-242px;
 }
 
@@ -333,8 +336,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 71%
 .slider{
 	display:block;
 	float:left;
-	width:180px;
-	height:100%;
+	width:250px;
 	margin:0;
 	padding:0;
 	list-style-type:none;
