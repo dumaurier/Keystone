@@ -65,38 +65,38 @@
    		    $(document).ready(function() {
 				
 
-			function fallback() {	
+			function fallback() {
+			  
 				$(".banners")
-				.css("top","-1083px")
-				.animate({top:'-1083px'},{duration:1000 })
+				.animate({top:'-1083px',left:'250px'},{duration:1000 })
 				.delay(3000)
-				.animate({top:'-723px'},{duration:1000 })
+				.animate({top:'-723px',left:'250px'},{duration:1000 })
 				.delay(3000)
-				.animate({top:'-363px'},{duration:1000 })
-				.delay(3000)
-				fallback()
-				;}
-			
-				fallback();
-				});
-
-    	
-/*
-    		function arrow() {	
-				$(".sliderArrow")
-				.css("top","60px")
-				.animate({top:'60px'},{duration:1000 })
-				.delay(5000)
-				.animate({top:'180px'},{duration:1000 })
-				.delay(5000)
-				.animate({top:'300px'},{duration:1000 })
-				.delay(5000)
-				arrow();
+				.animate({top:'-363px',left:'250px'},{duration:1000 })
+				.delay(3000)	
 				}
 				
-				arrow();
+					   
+			  function arrow() {
+				$(".sliderArrow")
+				.animate({top:'40px'},{duration:1000 })
+				.delay(3000)
+				.animate({top:'160px'},{duration:1000 })
+				.delay(3000)
+				.animate({top:'280px'},{duration:1000 })
+				.delay(3000)
+				}
+			    				
+      fallback();
+      arrow();
+      
+      setInterval(fallback,12000);
+      setInterval(arrow,12000)
+    
+				
 				});
-*/
+				
+
         };
         </script>
 <!--[if gte IE 9]>
