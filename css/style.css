@@ -4,47 +4,7 @@
 *******************************
 */
 
-@-webkit-keyframes arrow{
-	0%{top:60px}
-	32%{top:60px}
-	35%{top:180px;}
-	70%{top:180px;}
-	73%{top:300px}
-	97%{top:300px}
-	100%{top:55px}
-}
-
-@-o-keyframes arrow{
-	0%{top:60px}
-	32%{top:60px}
-	35%{top:180px;}
-	70%{top:180px;}
-	73%{top:300px}
-	97%{top:300px}
-	100%{top:55px}
-}
-
-@-moz-keyframes arrow{
-	0%{top:60px}
-	32%{top:60px}
-	35%{top:180px;}
-	70%{top:180px;}
-	73%{top:300px}
-	97%{top:300px}
-	100%{top:55px}
-}
-
-@-ms-keyframes arrow{
-	0%{top:60px}
-	32%{top:60px}
-	35%{top:180px;}
-	70%{top:180px;}
-	73%{top:300px}
-	97%{top:300px}
-	100%{top:55px}
-}
-
-
+/***** Animation Controls for Rotating Banner images *****/
 @-webkit-keyframes banner{
 	0%{top:-1083px;}
 	32%{top:-1083px;}
@@ -86,7 +46,72 @@
 	100%{top:0px;}
 }
 
+.banners{
 
+	-webkit-animation:banner 15s infinite linear ;
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation:banner 15s infinite linear;
+	-moz-animation-fill-mode:backwards;
+	-ms-animation:banner 15s infinite linear;
+	-ms-animation-fill-mode:backwards;
+	-o-animation:banner 15s infinite linear;
+	-o-animation-fill-mode:backwards;
+}
+
+
+/****** Animation controls for Arrow *****/
+@-webkit-keyframes arrow{
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
+	100%{top:55px}
+}
+
+@-o-keyframes arrow{
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
+	100%{top:55px}
+}
+
+@-moz-keyframes arrow{
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
+	100%{top:55px}
+}
+
+@-ms-keyframes arrow{
+	0%{top:60px}
+	32%{top:60px}
+	35%{top:180px;}
+	70%{top:180px;}
+	73%{top:300px}
+	97%{top:300px}
+	100%{top:55px}
+}
+
+.sliderArrow{
+	-webkit-animation:arrow 15s infinite linear;
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation:arrow 15s infinite linear;
+	-moz-animation-fill-mode:backwards;
+	-ms-animation:arrow 15s infinite linear;
+	-ms-animation-fill-mode:backwards;
+	-o-animation:arrow 15s infinite linear;
+	-o-animation-fill-mode:backwards;
+}
+
+/***** Animation Controls for Rotating Banner Timer *****/
 @-webkit-keyframes cta1{
 0%{height:120px;}
 35%{height:0px;}
@@ -203,23 +228,14 @@
 }
 
 
-.banners{
-	-webkit-animation:banner 15s infinite linear;
-	-webkit-animation-fill-mode:backwards;
-	-moz-animation:banner 15s infinite linear;
-	-moz-animation-fill-mode:backwards;
-	-ms-animation:banner 15s infinite linear;
-	-ms-animation-fill-mode:backwards;
-	-o-animation:banner 15s infinite linear;
-	-o-animation-fill-mode:backwards;
-}
-
+/***** Pauses Rotating Banner animation when user hovers over any part of the rotating banner *****/
 .container:hover .banners,.container:hover .slider li:nth-of-type(1),.container:hover .slider li:nth-of-type(2),.container:hover .slider li:nth-of-type(3),.container:hover .slider li:nth-of-type(4),.container:hover .sliderArrow,.container:hover .timer{
 	-webkit-animation-play-state:paused;
 	-moz-animation-play-state:paused;
 	-ms-animation-play-state:paused;
 	-o-animation-play-state:paused;
 }
+
 /**********************************
 *****  END ANIMATION CONTROLS *****
 **********************************/
@@ -227,6 +243,8 @@
 /**********************************
 ********  MANUAL CONTROLS *********
 **********************************/
+
+/**** Sets hover state for banner headlines *****/
 .slider .cta a:hover{
 	background:rgba(206,206,206,.8);
 	background:-webkit-linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
@@ -236,7 +254,7 @@
 	background:linear-gradient(left, rgba(206,206,206,.7) 0%,rgba(255,255,255,1) 100%) no-repeat;
 	}
 
-
+/***** Generates rotating banner preview when user hovers over banner headlines *****/
 .slider li:hover::before{
 	display:block;
 	content:"";
@@ -385,20 +403,13 @@
 	background: linear-gradient(top, rgba(0,122,201,1) 0%,rgba(0,122,201,1) 50%,rgba(0,122,201,.3) 100%) no-repeat;
 }
 
+/***** Hides Timer if users browser does not support CSS Animations *****/
 .no-cssanimations .timer{
 	display: none;
 }
 
 
 .sliderArrow{
-	-webkit-animation:arrow 15s infinite linear;
-	-webkit-animation-fill-mode:backwards;
-	-moz-animation:arrow 15s infinite linear;
-	-moz-animation-fill-mode:backwards;
-	-ms-animation:arrow 15s infinite linear;
-	-ms-animation-fill-mode:backwards;
-	-o-animation:arrow 15s infinite linear;
-	-o-animation-fill-mode:backwards;
 	position: absolute;
 	left:265px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
@@ -409,8 +420,10 @@
 	z-index: 100;
 }
 
-
+/***** Hides Arrow if users browser does not support CSS Animations *****/
 .no-cssanimations .sliderArrow{
 	display: none;
 }
+
+
 

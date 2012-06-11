@@ -60,8 +60,6 @@
     
     
     <!-- MODERNIZR FALLBACK IF CSS ANIMATIONS ARE NOT SUPPORTED -->
-
-
         <script type="text/javascript">
         if(!Modernizr.cssanimations) { // Test if CSS animations are supported
    		    $(document).ready(function() {
@@ -71,11 +69,11 @@
 				$(".banners")
 				.css("top","-1083px")
 				.animate({top:'-1083px'},{duration:1000 })
-				.delay(5000)
+				.delay(3000)
 				.animate({top:'-723px'},{duration:1000 })
-				.delay(5000)
+				.delay(3000)
 				.animate({top:'-363px'},{duration:1000 })
-				.delay(5000)
+				.delay(3000)
 				fallback()
 				;}
 			
@@ -101,10 +99,6 @@
 */
         };
         </script>
-
-
-
-        
 
 </body>
 </html>
