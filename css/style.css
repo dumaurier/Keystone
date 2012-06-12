@@ -61,43 +61,43 @@
 
 /****** Animation controls for Arrow *****/
 @-webkit-keyframes arrow{
-	0%{top:20px}
-	32%{top:20px}
-	35%{top:100px;}
-	70%{top:100px;}
-	73%{top:180px}
-	97%{top:180px}
-	100%{top:20px}
+	0%{top:0px}
+	32%{top:0px}
+	35%{top:80px;}
+	70%{top:80px;}
+	73%{top:160px}
+	97%{top:160px}
+	100%{top:0px}
 }
 
 @-o-keyframes arrow{
-	0%{top:20px}
-	32%{top:20px}
-	35%{top:100px;}
-	70%{top:100px;}
-	73%{top:180px}
-	97%{top:180px}
-	100%{top:20px}
+	0%{top:0px}
+	32%{top:0px}
+	35%{top:80px;}
+	70%{top:80px;}
+	73%{top:160px}
+	97%{top:160px}
+	100%{top:0px}
 }
 
 @-moz-keyframes arrow{
-	0%{top:20px}
-	32%{top:20px}
-	35%{top:100px;}
-	70%{top:100px;}
-	73%{top:180px}
-	97%{top:180px}
-	100%{top:20px}
+	0%{top:0px}
+	32%{top:0px}
+	35%{top:80px;}
+	70%{top:80px;}
+	73%{top:160px}
+	97%{top:160px}
+	100%{top:0px}
 }
 
 @-ms-keyframes arrow{
-	0%{top:20px}
-	32%{top:20px}
-	35%{top:100px;}
-	70%{top:100px;}
-	73%{top:180px}
-	97%{top:180px}
-	100%{top:20px}
+	0%{top:0px}
+	32%{top:0px}
+	35%{top:80px;}
+	70%{top:80px;}
+	73%{top:160px}
+	97%{top:160px}
+	100%{top:0px}
 }
 
 .sliderArrow{
@@ -321,8 +321,8 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	display:block;
 	left:301px;
 	border:none;
-/* 	margin-top: 3px; */
 	overflow: hidden;
+	top:-720px;
 }
 
 .banners a{
@@ -340,6 +340,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 .banners a img{
 	display: block;
 	width: 100%;
+	border: 0;
 }
 
 .slider{
@@ -374,7 +375,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 
 
 
-.slider .cta:last-of-type{
+.slider .cta3{
 	border-bottom:none;
 }
 
@@ -383,7 +384,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	text-decoration:none;
 	height:100%;
 	width:100%;
-	margin-top:-10px;
+	margin-top:-5px;
 	color:#007ac9;
 }
 
@@ -391,7 +392,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 .slider .cta .sliderLink .sliderTitle,.slider .cta .sliderLink p{
 	position:relative;
 	font-family:sans-serif;
-	margin:10px;
+	margin:5px 10px;
 	text-align:left;
 }
 
@@ -427,8 +428,8 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 
 .sliderArrow{
 	position: absolute;
-	left:297px;
-	height: 40px;
+	left:300px;
+	height: 80px;
 	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-ms-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
 	-o-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
