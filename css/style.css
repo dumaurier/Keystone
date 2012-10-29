@@ -48,13 +48,13 @@
 
 .banners{
 
-	-webkit-animation:banner 30s infinite linear ;
+	-webkit-animation:banner 18s infinite linear ;
 	-webkit-animation-fill-mode:backwards;
-	-moz-animation:banner 30s infinite linear;
+	-moz-animation:banner 18s infinite linear;
 	-moz-animation-fill-mode:backwards;
-	-ms-animation:banner 30s infinite linear;
+	-ms-animation:banner 18s infinite linear;
 	-ms-animation-fill-mode:backwards;
-	-o-animation:banner 30s infinite linear;
+	-o-animation:banner 18s infinite linear;
 	-o-animation-fill-mode:backwards;
 }
 
@@ -101,13 +101,13 @@
 }
 
 .sliderArrow{
-	-webkit-animation:arrow 30s infinite linear;
+	-webkit-animation:arrow 18s infinite linear;
 	-webkit-animation-fill-mode:backwards;
-	-moz-animation:arrow 30s infinite linear;
+	-moz-animation:arrow 18s infinite linear;
 	-moz-animation-fill-mode:backwards;
-	-ms-animation:arrow 30s infinite linear;
+	-ms-animation:arrow 18s infinite linear;
 	-ms-animation-fill-mode:backwards;
-	-o-animation:arrow 30s infinite linear;
+	-o-animation:arrow 18s infinite linear;
 	-o-animation-fill-mode:backwards;
 }
 
@@ -207,26 +207,35 @@
 
 
 .slider .cta1 .timer{
--webkit-animation:cta1 30s infinite;
--moz-animation:cta1 30s infinite;
--ms-animation:cta1 30s infinite;
--o-animation:cta1 30s infinite;		
+-webkit-animation:cta1 18s infinite;
+-moz-animation:cta1 18s infinite;
+-ms-animation:cta1 18s infinite;
+-o-animation:cta1 18s infinite;		
 }
 
 .slider .cta2 .timer{
--webkit-animation:cta2 30s infinite;
--moz-animation:cta2 30s infinite;
--ms-animation:cta2 30s infinite;
--o-animation:cta2 30s infinite;	
+-webkit-animation:cta2 18s infinite;
+-moz-animation:cta2 18s infinite;
+-ms-animation:cta2 18s infinite;
+-o-animation:cta2 18s infinite;	
 }
 
 .slider .cta3 .timer{
--webkit-animation:cta3 30s infinite;
--moz-animation:cta3 30s infinite;
--ms-animation:cta3 30s infinite;
--o-animation:cta3 30s infinite;	
+-webkit-animation:cta3 18s infinite;
+-moz-animation:cta3 18s infinite;
+-ms-animation:cta3 18s infinite;
+-o-animation:cta3 18s infinite;	
 }
 
+
+
+/**********************************
+*****  END ANIMATION CONTROLS *****
+**********************************/
+
+/**********************************
+********  MANUAL CONTROLS *********
+**********************************/
 
 /***** Pauses Rotating Banner animation when user hovers over any part of the rotating banner *****/
 .container:hover .banners,.container:hover .slider li:nth-of-type(1),.container:hover .slider li:nth-of-type(2),.container:hover .slider li:nth-of-type(3),.container:hover .slider li:nth-of-type(4),.container:hover .sliderArrow,.container:hover .timer{
@@ -236,13 +245,6 @@
 	-o-animation-play-state:paused;
 }
 
-/**********************************
-*****  END ANIMATION CONTROLS *****
-**********************************/
-
-/**********************************
-********  MANUAL CONTROLS *********
-**********************************/
 
 /**** Sets hover state for banner headlines *****/
 .slider .cta a:hover{
@@ -259,12 +261,13 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	}
 
 /***** Generates rotating banner preview when user hovers over banner headlines *****/
-.slider li:hover::before{
+
+/* COMMENT OUT NEXT FOUR SELECTORS TO DISABLE BANNER PREVIEWS */
+.slider li:hover:before{
 	display:block;
 	content:"";
 	width:640px;
 	height:240px;
-	overflow:hidden;
 	position:absolute;
 	left:301px;
 	z-index:50;
@@ -272,22 +275,22 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	}
 	
 	
-.slider .cta1:hover::before{
-	background: url(../images/1.png) no-repeat;
+.slider .cta1:hover:before{
+	background: url(http://placehold.it/640x240/007ac9/) no-repeat; /* IMAGE FOR FIRST SLIDE */
 	background-size: cover;
 	top:0;
 }
 
-.slider .cta2:hover::before{
-	background: url(../images/2.png) no-repeat;
+.slider .cta2:hover:before{
+	background: url(http://placehold.it/640x240/3C8A2E/) no-repeat; /* IMAGE FOR SECOND SLIDE */
 	background-size: cover;
 	top:-81px;
 }
 
-.slider .cta3:hover::before{
-	background: url(../images/3.png) no-repeat;
+.slider .cta3:hover:before{
+	background: url(http://placehold.it/640x240/D2492A/) no-repeat; /* IMAGE FOR THIRD SLIDE */
 	background-size: cover;
-	top:-161px;
+	top:-162px;
 }
 
 /**********************************
@@ -297,6 +300,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 
 .operaBug{
 	overflow: hidden;
+	height:240px;
 }
 
 
@@ -309,11 +313,14 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	border:1px solid #999;
 	margin:10px;
 	padding:0;
-	overflow:hidden;
 	-moz-border-radius: 3px;
 	border-radius:3px;
 	-moz-box-shadow:1px 1px 3px rgba(0,0,0,.3);
 	box-shadow:1px 1px 3px rgba(0,0,0,.3);
+}
+
+*+html .container { 
+   overflow:hidden;
 }
 
 .banners{
@@ -351,6 +358,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	padding:0;
 	list-style-type:none;
 	position:fixed;
+	z-index:10;
 }
 
 
@@ -430,11 +438,7 @@ background: linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 31%
 	position: absolute;
 	left:300px;
 	height: 80px;
-	-webkit-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
-	-ms-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
-	-o-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
-	-moz-filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
-	filter:drop-shadow(2px 2px 3px rgba(0,0,0,.4));
+
 	z-index: 100;
 }
 
