@@ -1,1 +1,1 @@
-CSS slider built using CSS animations. This branch accomodates four images and has an incomplete fallback for older browsers. 
+CSS slider built using CSS animations. This branch accomodates three images and has an complete fallback for older browsers. 
